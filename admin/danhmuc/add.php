@@ -16,6 +16,7 @@ if (isset($_POST['themmoi']) && $_POST['themmoi']){
     if (empty($error)) {
         insert_danhmuc($tenhang);
         $thongbao = "Thêm mới thành công";
+        header('location:index.php?listdm');
     }
     
 }
@@ -33,8 +34,9 @@ if (isset($_POST['themmoi']) && $_POST['themmoi']){
             </div>
             <div class="row">
             <div class="col">
-                <label class="form-label">Tên </label>
+                <label class="form-label">Tên loại </label>
                 <input type="text" name="tenhang" class="form-control" placeholder="Nhập tên loại">
+                <span class="text-danger"><?php echo $message = isset($error['hang']) ? $error['hang'] : '' ?></span>
                 <span class="text-danger"><?php echo $message = isset($error['loai']) && !empty($error['loai']) ? $error['loai'] : ""?></span>
                 <span class="text-success"><?php echo $message = isset($thongbao) && !empty($thongbao) ? $thongbao : ""?></span>
             </div>

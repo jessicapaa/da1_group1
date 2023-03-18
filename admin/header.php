@@ -66,7 +66,7 @@
 				</div>
 			</div>
 
-			<div class="wrap-menu-desktop">
+			<div style="position: unset;" class="wrap-menu-desktop">
 				<nav class="limiter-menu-desktop container">
 					
 					<!-- Logo desktop -->		

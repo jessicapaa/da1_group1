@@ -34,6 +34,14 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="public/css/util.css">
 	<link rel="stylesheet" type="text/css" href="public/css/main.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="auth.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		
+	</style>
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
@@ -54,10 +62,10 @@
 							Hỗ trợ & Hỏi đáp
 						</a> -->
 
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
+						<a href="index.php?act=login" class="flex-c-m trans-04 p-lr-25">
 							ĐĂNG NHẬP 
 						</a>
-						<a href="#" class="flex-c-m trans-04 p-lr-25 m-ll-25">
+						<a href="index.php?act=register" class="flex-c-m trans-04 p-lr-25 m-ll-25">
 							ĐĂNG KÝ 
 						</a>
 
