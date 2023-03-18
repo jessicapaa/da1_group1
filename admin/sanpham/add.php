@@ -13,6 +13,7 @@ if (isset($_POST['themmoi']) && $_POST['themmoi']) {
     if (empty($name)) {
         $error['name'] = $messageEmpty;
     }
+
     if (empty($price)) {
         $error['price'] = $messageEmpty;
     } else {
@@ -40,6 +41,9 @@ if (isset($_POST['themmoi']) && $_POST['themmoi']) {
         } else if ($_FILES['image']['size'] > 2 * 1024 * 1024) {
             $error['image'] = "Dung lượng không được vượt quá 2MB";
         }
+    }
+    if (empty($description)) {
+        $error['description'] = $messageEmpty;
     }
     $image = "../uploads/images/" . $_FILES['image']['name'];
     $isUploadfile = move_uploaded_file($_FILES['image']['tmp_name'], $image);
